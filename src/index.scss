@@ -2,7 +2,20 @@
 @import './styles/variables.scss';
 
 @font-face {
+  font-family: 'Sofia Pro';
+  font-weight: 400;
+  src: url('./assets/fonts/Sofia Pro Regular Az.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Sofia Pro';
+  font-weight: 600;
+  src: url('./assets/fonts/Sofia Pro Semi Bold Az.otf') format('opentype');
+}
+
+@font-face {
   font-family: 'SuisseIntl';
+  font-weight: 400;
   src: url('./assets/fonts/SuisseIntl-Regular.otf') format('opentype');
 }
 
@@ -16,12 +29,22 @@ body {
   font-weight: 400;
   font-size: 15px;
   line-height: 23px;
-  letter-spacing: 3%;
+  letter-spacing: 0.5px;
   color: var(--primaryTextColor);
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
 }
 
 @media(min-width: 1024px) {
   button {
     cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+      transform: scale(1.05);
+    }
   }
 }
