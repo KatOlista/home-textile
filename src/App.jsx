@@ -1,10 +1,14 @@
-import { Header } from "./components/Header/Header";
+import { About, Header } from "./components";
 
 export const App = () => {
 
   return (
     <>
       <Header />
+
+      <main>
+        <About />
+      </main>
     </>
   )
 };

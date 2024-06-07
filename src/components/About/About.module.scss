@@ -1,0 +1,217 @@
+.about {
+  padding: 14px 20px 86px;
+  position: relative;
+
+  &__logo {
+    margin: 0 auto;
+    display: block;
+    width: 200px;
+  }
+
+  &__title {
+    margin: 13px 0 17px;
+    text-align: center;
+    font-size: 26px;
+    line-height: 34px;
+    color: var(--accentPrimeColor);
+  }
+
+  &__benefits {
+    margin-top: 25px;
+  }
+
+  &__benefit {
+    margin-bottom: 28px;
+    display: flex;
+    gap: 13px;
+
+    & span {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 31px;
+      aspect-ratio: 1;
+      border-radius: 50%;
+      background-color: var(--primaryBgColor);
+    }
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__imgs {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__empty {
+    width: 17%;
+    height: 45%;
+    aspect-ratio: 0.7;
+    background: linear-gradient(0deg, rgba(249, 240, 229, 0.7) 0%, rgba(249, 240, 229, 0.22) 100%);
+  }
+
+  &__secondary {
+    width: 90%;
+    height: 76%;
+    left: 6%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 1;
+
+    & img:last-child {
+      height: 105%;
+    }
+  }
+
+  &__prime {
+    width: 40%;
+    height: 100%;
+    z-index: 2;
+    object-fit: cover;
+  }
+
+  &__feedback {
+    position: absolute;
+    bottom: -80px;
+    width: calc(100% - 40px);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 11px 16px;
+    border-radius: 5px;
+    border: 1px solid var(--primaryBorderColor);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  }
+
+  &__author {
+    display: flex;
+    gap: 10px;
+  }
+
+  &__photo {
+    height: 39px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+  }
+
+  &__name {
+    font-size: 15px;
+    line-height: 23px;
+  }
+
+  &__review {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+  }
+
+  &__online {
+    font-family: 'SuisseIntl', 'sans-serif';
+    font-size: 11px;
+    line-height: 20px;
+  }
+
+  &__quote {
+    font-family: 'SuisseIntl', 'sans-serif';
+    font-size: 12px;
+    line-height: 23px;
+  }
+
+
+  @media (min-width: 1024px) {
+    padding: 33px 62px 62px 96px;
+
+    &__logo {
+      display: inline;
+    }
+
+    &__content {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: flex-end;
+      gap: 7%;
+    }
+
+    &__title {
+      margin-top: 62px;
+      padding-left: 6px;
+      width: 45%;
+      text-align: left;
+      font-size: 38px;
+      line-height: 45px;
+    }
+
+    &__benefits {
+      margin-bottom: 40px;
+    }
+
+    &__benefit {
+      gap: 15px;
+      margin-bottom: 24px;
+    }
+
+    &__button {
+      margin-top: 16px;
+      justify-content: left;
+    }
+
+    &__imgs {
+      flex: 65%;
+      top: 0;
+      height: 335px;
+    }
+
+    &__info {
+      flex: 35%;
+    }
+
+    &__feedback {
+      bottom: -150px;
+      width: 416px;
+      padding: 16px 19px;
+    }
+
+    &__sign {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: baseline;
+      gap: 10px;
+    }
+
+    &__author {
+      align-items: center;
+    }
+  }
+
+  @media (min-width: 1440px) {
+    &__imgs {
+      top: -85px;
+      height: 422px;
+    }
+
+    &__feedback {
+      bottom: -45px;
+    }
+  }
+}
+
+.sunmoon {
+  height: 21px;
+  width: 21px;
+}
+
+.cart {
+  height: 15px;
+  width: 19px;
+}
+
+.waves {
+  height: 13px;
+  width: 14px;
+}

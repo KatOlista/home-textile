@@ -1,10 +1,12 @@
 import styles from './Button.module.scss';
 
-export const Button = ({ text }) => {
+export const Button = ({ content, src }) => {
 
   return (
     <button className={styles.button}>
-      {text}
+      {content}
+
+      {src && (<img src={src} alt="" />)}
     </button>
   )
 };

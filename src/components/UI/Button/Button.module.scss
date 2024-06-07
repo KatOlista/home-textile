@@ -8,11 +8,15 @@
   font-size: 18px;
   font-family: 'SuisseIntl';
 
+  & img {
+    padding-left: 9px;
+  }
+
   &:active {
     background-color: var(--accentSecondaryColor);
   }
 
   @media (min-width: 1024px) {
-    width: 356px;
+    width: 90%;
   }
 }
