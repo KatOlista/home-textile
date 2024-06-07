@@ -1,0 +1,18 @@
+.button {
+  padding: 16px;
+  height: 56px;
+  width: 86%;
+  border-radius: 5px;
+  background-color: var(--accentPrimeColor);
+  color: var(--buttonTextColor);
+  font-size: 18px;
+  font-family: 'SuisseIntl';
+
+  &:active {
+    background-color: var(--accentSecondaryColor);
+  }
+
+  @media (min-width: 1024px) {
+    width: 356px;
+  }
+}
