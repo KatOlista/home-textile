@@ -6,12 +6,12 @@
   </a>
 </p>
 
-The product page is built using responsive design principles, ensuring a smooth and visually pleasing experience across various devices, from desktops to mobile. It is a dynamic single-page website extracts dynamic content from Headless CMS ![Sanity](https://img.shields.io/badge/Sanity-F03E2F.svg?style=for-the-badge&logo=Sanity&logoColor=white)
+The product page was built using responsive design principles, ensuring a smooth and visually pleasing experience across various devices, from desktops to mobile. It is a dynamic single-page website that extracts dynamic content from Headless CMS ![Sanity](https://img.shields.io/badge/Sanity-F03E2F.svg?style=for-the-badge&logo=Sanity&logoColor=white)
 
 ## Getting Started
 
 1. Clone the repository:
-### `git clone https://github.com/OlhaMomot/loungewear-product-page.git`
+### `git clone https://github.com/KatOlista/byteex_product-page.git`
 
 2. Install dependencies:
 
@@ -21,7 +21,7 @@ The product page is built using responsive design principles, ensuring a smooth 
 
 ### `npm run dev`
 
-4. You can get existing data from ![Sanity](https://img.shields.io/badge/Sanity-F03E2F.svg?style=for-the-badge&logo=Sanity&logoColor=white) only if you open project on localhost http://localhost:5173 due to the limitation of CORS. Or reconnect project to your own CMS.
+4. You can get existing data from ![Sanity](https://img.shields.io/badge/Sanity-F03E2F.svg?style=for-the-badge&logo=Sanity&logoColor=white) only if you open project on localhost http://localhost:5173 due to the limitation of CORS. Or connect the project to your own CMS.
 
 
 ## Used Technologies
