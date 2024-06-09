@@ -1,0 +1,19 @@
+.card {
+  display: flex;
+  justify-content: center;
+  max-width: 146px;
+  width: auto;
+  max-height: 35px;
+
+  & img {
+    margin: 0 auto;
+    max-width: 100%;
+    object-fit: contain;
+    max-height: 100%;
+  }
+
+  @media (min-width: 1024px) {
+    max-width: 270px;
+    max-height: 54px;
+  }
+}

@@ -19,6 +19,31 @@
   src: url('./assets/fonts/SuisseIntl-Regular.otf') format('opentype');
 }
 
+.swiper-wrapper {
+  align-items: center;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+}
+
+.swiper-pagination {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.swiper-slide-fully-visible {
+  border: 2px solid transparent;
+}
+
+.swiper-slide-thumb-active {
+  border: 2px solid #fff;
+}
+
 body {
   margin: 0;
   display: flex;
@@ -46,5 +71,9 @@ body {
     &:hover {
       transform: scale(1.05);
     }
+  }
+
+  .swiper-pagination {
+    display: none;
   }
 }

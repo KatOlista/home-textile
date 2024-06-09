@@ -1,0 +1,44 @@
+.card {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 303px;
+  gap: 7px;
+
+  &__img {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 453px;
+  }
+
+  & img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__title {
+    text-align: center;
+    font-family: 'SuisseIntl', 'sans-serif';
+    font-size: 13px;
+    line-height: 22px;
+  }
+
+  @media (min-width: 1024px) {
+    width: 400px;
+    gap: 13px;
+
+    &__img {
+      height: 580px;
+    }
+  }
+
+  @media (min-width: 1440px) {
+    width: 433px;
+    gap: 13px;
+
+    &__img {
+      height: 648px;
+    }
+  }
+}

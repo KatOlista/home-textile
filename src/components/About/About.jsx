@@ -1,4 +1,5 @@
 import { Button } from '../UI';
+import { bigScreenBreakpoint, comments, userDeviceWidth } from '../../utils/constants';
 
 import styles from './About.module.scss';
 
@@ -13,7 +14,6 @@ import productPicture3 from '../../assets/imgs/products/product-picture-3.png';
 import SunMoonIcon from '../../assets/icons/sun-moon.svg?react';
 import CartIcon from '../../assets/icons/cart.svg?react';
 import WavesIcon from '../../assets/icons/waves.svg?react';
-import { bigScreenBreakpoint, userDeviceWidth } from '../../utils/constants';
 
 const BENEFITS = [
   {id: 1, icon: <SunMoonIcon className={styles.sunmoon} />, text: 'Beautiful, comfortable loungewear for day or night.'},
@@ -22,10 +22,9 @@ const BENEFITS = [
 ];
 
 export const About = () => {
-
   const quote = userDeviceWidth >= bigScreenBreakpoint
-    ? 'Overjoyed with my Loungewear set. I have the jogger and the sweatshirt. Quality product on every level. From the compostable packaging, to the supplied washing bag, even the garments smells like fresh herbs when I first held them.'
-    : 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sed sollicitudin dolor, non sodales justo.';
+    ? comments[0]
+    : comments[1];
 
   return (
     <section className={styles.about}>
@@ -42,19 +41,19 @@ export const About = () => {
           <div className={styles.about__secondary}>
             <img
               src={productPicture1}
-              alt="photo"
+              alt="product example"
             />
 
             <img
               src={productPicture3}
-              alt="photo"
+              alt="product example"
             />
           </div>
 
           <img
             className={styles.about__prime}
             src={productPicture2}
-            alt="photo"
+            alt="product example"
           />
 
           <div className={styles.about__empty} />
@@ -98,12 +97,12 @@ export const About = () => {
               </span>
             </div>
 
-            <span className={styles.about__name}>Amy P.</span>
+            <span className={styles.about__name}>{quote.name}</span>
           </div>
         </div>
 
         <p className={styles.about__quote}>
-          {quote}
+          {quote.text}
         </p>
       </div>
 

@@ -1,4 +1,4 @@
-import { About, Header } from "./components";
+import { About, Header, Loungewear } from "./components";
 
 export const App = () => {
 
@@ -8,6 +8,8 @@ export const App = () => {
 
       <main>
         <About />
+
+        <Loungewear />
       </main>
     </>
   )

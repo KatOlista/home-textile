@@ -1,0 +1,22 @@
+.slider {
+  position: relative;
+
+  &__bullets {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 50px;
+  }
+
+  &__wrapper {
+    width: 220px;
+  }
+
+  &__small {
+    width: 100%;
+    background-color: #fff;
+    z-index: 2;
+    border: 'none';
+  }
+}

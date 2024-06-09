@@ -87,6 +87,7 @@
     border-radius: 5px;
     border: 1px solid var(--primaryBorderColor);
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    background-color: var(--buttonTextColor);
   }
 
   &__author {
@@ -123,9 +124,8 @@
     line-height: 23px;
   }
 
-
   @media (min-width: 1024px) {
-    padding: 33px 62px 62px 96px;
+    padding: 33px 62px 128px 96px;
 
     &__logo {
       display: inline;
@@ -172,7 +172,7 @@
     }
 
     &__feedback {
-      bottom: -150px;
+      bottom: -73px;
       width: 416px;
       padding: 16px 19px;
     }
@@ -190,6 +190,8 @@
   }
 
   @media (min-width: 1440px) {
+    padding: 33px 62px 62px 96px;
+
     &__imgs {
       top: -85px;
       height: 422px;
