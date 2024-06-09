@@ -1,11 +1,11 @@
 import styles from './BrandCard.module.scss';
 
-export const BrandCard = ({ item }) => {
+export const BrandCard = ({ brand }) => {
   return (
     <div className={styles.card}>
       <img
-        src={item.mainImage.asset.url}
-        alt={item.title}
+        src={brand.mainImage.asset.url}
+        alt={brand.title}
       />
     </div>
   )

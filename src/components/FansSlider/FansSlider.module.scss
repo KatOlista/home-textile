@@ -1,0 +1,19 @@
+.slider {
+  &__bullet {
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #c4c4c4;
+  }
+
+  &__active {
+    background-color: #000;
+  }
+
+  @media (min-width: 1024px) {
+    &__bullet {
+      display: none;
+    }
+  }
+}

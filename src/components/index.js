@@ -6,4 +6,5 @@ export { BrandSlider } from './BrandSlider/BrandSlider';
 export { LoungewearSlider } from './LoungewearSlider/LoungewearSlider';
 export { Comfort } from './Comfort/Comfort';
 export { ComfortSlider } from './ComfortSlider/ComfortSlider';
-// export {  } from './';
+export { Fans } from './Fans/Fans';
+export { FansSlider } from './FansSlider/FansSlider';

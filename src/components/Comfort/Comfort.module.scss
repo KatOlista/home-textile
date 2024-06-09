@@ -1,5 +1,5 @@
 .comfort {
-  padding: 56px 37px 59px;
+  padding: 56px 37px 16px;
 
   &__subtitle {
     display: flex;
@@ -8,6 +8,24 @@
 
   &__slider {
     margin: 23px auto 40px;
+  }
+
+  @media (min-width: 1024px) {
+    padding: 75px 172px 31px;
+
+    &__content {
+      margin: 46px 0 56px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 41px;
+    }
+
+    &__stars {
+      margin: 0 auto;
+      width: 30%;
+      min-width: 300px;
+    }
   }
 }
 

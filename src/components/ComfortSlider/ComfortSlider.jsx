@@ -1,10 +1,11 @@
 import { Navigation, Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
+import { ComfortCard } from '../UI';
+
 import 'swiper/scss/navigation';
 import 'swiper/scss/pagination';
 import 'swiper/scss';
-import styles from './ComfortSlider.module.scss';
 
 export const ComfortSlider = ({ benefits }) => {
   return (
@@ -22,23 +23,10 @@ export const ComfortSlider = ({ benefits }) => {
       }}
       navigation
       slidesPerView={1}
-      className={styles.slider}
     >
       {benefits.map(benefit => (
         <SwiperSlide key={benefit.id}>
-          <div className={styles.slider__card} style={{ background: `${benefit.background}` }}>
-            <p className={styles.slider__icon}>
-              {benefit.icon}
-            </p>
-
-            <h3 className={styles.slider__title}>
-              {benefit.title}
-            </h3>
-
-            <p className={styles.slider__text}>
-              {benefit.text}
-            </p>
-          </div>
+          <ComfortCard benefit={benefit} />
         </SwiperSlide>
       ))}
     </Swiper>

@@ -72,6 +72,14 @@
     padding: 92px 62px 128px 96px;
     position: relative;
 
+    &__brands {
+      margin: 46px 0 56px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 30px;
+    }
+
     &__content {
       display: flex;
       flex-direction: row-reverse;

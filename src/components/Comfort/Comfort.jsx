@@ -1,4 +1,4 @@
-import { Stars, Subtitle } from '../UI';
+import { ComfortCard, Stars, Subtitle } from '../UI';
 import { indicator } from '../../utils/constants';
 
 import styles from './Comfort.module.scss';
@@ -47,10 +47,16 @@ export const Comfort = () => {
               <ComfortSlider benefits={BENEFITS} />
             </div>
         ) : (
-          <div></div>
+          <div className={styles.comfort__content}>
+            {BENEFITS.map(benefit => (
+              <ComfortCard key={benefit.id} benefit={benefit} />
+            ))}
+          </div>
       )}
 
-      <Stars />
+      <div className={styles.comfort__stars}>
+        <Stars />
+      </div>
     </section>
   )
 };

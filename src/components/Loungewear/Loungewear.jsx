@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-import { Stars, Subtitle } from '../UI';
+import { BrandCard, Stars, Subtitle } from '../UI';
 import { client } from '../../client';
 import { LoungewearSlider, BrandSlider } from '..';
 import { indicator } from '../../utils/constants';
@@ -11,9 +11,6 @@ import 'swiper/css/free-mode';
 import 'swiper/css/thumbs';
 import 'swiper/scss';
 import styles from './Loungewear.module.scss';
-
-// import arrow from '../../assets/imgs/additional/arrow.png';
-// import stars from '../../assets/imgs/additional/stars.png';
 
 import SunMoonIcon from '../../assets/icons/sun-moon.svg?react';
 import CartIcon from '../../assets/icons/cart.svg?react';
@@ -104,11 +101,20 @@ export const Loungewear = () => {
     <section className={styles.loungewear}>
       <p className={styles.loungewear__seen}>as seen in</p>
 
-      <div className={styles.loungewear__slider}>
-        {brands.length && (
-          <BrandSlider brands={brands} />
+      {!indicator
+        ? (
+            <div className={styles.loungewear__slider}>
+              {brands.length && (
+                <BrandSlider brands={brands} />
+              )}
+            </div>
+          ) : (
+            <div className={styles.loungewear__brands}>
+              {brands.map(brand => (
+                <BrandCard key={brand.slug.current} brand={brand} />
+              ))}
+            </div>
         )}
-      </div>
 
       <div className={styles.loungewear__subtitle}>
         <Subtitle text='Loungewear you can be proud of.' />

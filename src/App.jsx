@@ -2,6 +2,7 @@ import {
   About,
   Best,
   Comfort,
+  Fans,
   Header,
   Loungewear,
 } from "./components";
@@ -20,6 +21,8 @@ export const App = () => {
         <Best />
 
         <Comfort />
+
+        <Fans />
       </main>
     </>
   )

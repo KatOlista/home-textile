@@ -35,7 +35,7 @@ export const BrandSlider = ({ brands }) => {
       {brands.map(brand => (
         <SwiperSlide key={brand.slug.current}>
           <BrandCard
-            item={brand}
+            brand={brand}
           />
         </SwiperSlide>
       ))}

@@ -1,0 +1,51 @@
+.card {
+  display: flex;
+  height: 270px;
+  align-items: flex-start;
+  justify-content: center;
+
+  &__wrapper {
+    padding: 32px 29px;
+    width: 300px;
+    max-height: 265px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 13px;
+    border-radius: 8px;
+    border: 1px solid var(--thirdaryBorderColor);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  }
+
+  &__author {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 13px;
+  }
+
+  &__photo {
+    height: 35px;
+    width: 35px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: var(--accentQuadraryColor);
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__comment {
+    font-family: 'SuisseIntl', 'sans-serif';
+    font-size: 12px;
+    line-height: 20px;
+    text-align: left;
+  }
+}
