@@ -1,5 +1,5 @@
 .loungewear {
-  padding: 92px 20px 54px;
+  padding: 92px 20px 0;
   background: var(--gradientBgColor);
 
   &__seen {
@@ -31,6 +31,9 @@
     justify-content: center;
     margin-bottom: 28px;
     gap: 20px;
+  }
+
+  &__benefit:not(:last-of-type) {
     border-bottom: 1px solid rgba(196, 196, 196, 0.5);
   }
 
@@ -58,27 +61,49 @@
     }
   }
 
-  &__info {
+  &__text {
     padding-bottom: 30px;
     text-align: center;
     font-size: 14px;
     line-height: 18px;
   }
 
+  &__button {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__stars {
+    padding: 11px 0 43px;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 8px;
+  }
+
+  &__online {
+    font-family: 'SuisseIntl', 'sans-serif';
+    font-size: 11px;
+    line-height: 20px;
+  }
+
   @media (min-width: 1024px) {
+    padding: 92px 62px 128px 96px;
+    position: relative;
+
     &__content {
       display: flex;
       flex-direction: row-reverse;
-      justify-content: flex-end;
-      gap: 3%;
-    }
-
-    &__subtitle {
-      padding-left: 28px;
+      justify-content: space-between;
+      gap: 2%;
     }
 
     &__imgs {
-      width: 47%;
+      width: 54%;
+    }
+
+    &__info {
+      width: 44%;
     }
 
     &__name {
@@ -92,21 +117,24 @@
 
     &__benefits {
       margin-top: 0;
+      padding-inline: 0;
     }
 
     &__benefit {
+      gap: 10px;
       margin-bottom: 0;
-      display: flex;
-      flex-direction: column;
       justify-content: start;
-      gap: 20px;
-      border-bottom: 0px;
       align-items: flex-start;
     }
 
-    &__info {
+    &__benefit:not(:last-of-type) {
+      border-bottom: 0px;
+    }
+
+    &__text {
       text-align: left;
       padding-left: 50px;
+      padding-bottom: 10px;
       font-size: 15px;
       line-height: 23px;
     }
@@ -115,15 +143,16 @@
   @media (min-width: 1440px) {
     &__subtitle {
       position: absolute;
+      top: auto;
       padding-left: 28px;
     }
 
     &__content {
-      gap: 10%;
+      gap: 7%;
     }
 
     &__imgs {
-      width: 38%;
+      width: 44%;
     }
 
     &__benefits {
@@ -131,7 +160,12 @@
     }
 
     &__benefit {
-      margin-bottom: 28px;
+      gap: 20px;
+    }
+
+    &__text {
+      padding-left: 60px;
+      padding-bottom: 30px;
     }
   }
 }

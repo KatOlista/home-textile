@@ -1,5 +1,6 @@
 export const bigScreenBreakpoint = 1024;
 export const userDeviceWidth = window.innerWidth;
+export const indicator = userDeviceWidth >= bigScreenBreakpoint;
 
 export const comments = [
   {

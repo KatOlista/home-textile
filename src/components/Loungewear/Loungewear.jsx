@@ -1,7 +1,9 @@
 import { useEffect, useState } from 'react';
 
-import { Subtitle } from '../UI';
+import { Button, Subtitle } from '../UI';
 import { client } from '../../client';
+import { LoungewearSlider, BrandSlider } from '..';
+import { indicator } from '../../utils/constants';
 
 import 'swiper/scss/navigation';
 import 'swiper/scss/pagination';
@@ -10,15 +12,14 @@ import 'swiper/css/thumbs';
 import 'swiper/scss';
 import styles from './Loungewear.module.scss';
 
+import arrow from '../../assets/imgs/additional/arrow.png';
+import stars from '../../assets/imgs/additional/stars.png';
+
 import SunMoonIcon from '../../assets/icons/sun-moon.svg?react';
 import CartIcon from '../../assets/icons/cart.svg?react';
 import WavesIcon from '../../assets/icons/waves.svg?react';
 import LeafIcon from '../../assets/icons/leaf.svg?react';
 import CloudIcon from '../../assets/icons/cloud.svg?react';
-
-import { LoungewearSlider } from '../LoungewearSlider/LoungewearSlider';
-import { BrandSlider } from '../BrandSlider/BrandSlider';
-import { bigScreenBreakpoint, userDeviceWidth } from '../../utils/constants';
 
 export const Loungewear = () => {
   const [loungewears, setLoungewears] = useState([]);
@@ -36,7 +37,7 @@ export const Loungewear = () => {
     leafOrSunmoon: <LeafIcon className={styles.leaf} />
   };
 
-  const content = userDeviceWidth >= bigScreenBreakpoint
+  const content = indicator
     ? bigScreenIcons
     : smallScreensIcons;
 
@@ -120,20 +121,41 @@ export const Loungewear = () => {
           )}
         </div>
 
-        <ul className={styles.loungewear__benefits}>
-          {BENEFITS.map(benefit => (
-            <li key={benefit.id} className={styles.loungewear__benefit}>
-              <div className={styles.loungewear__name}>
-                <span>{benefit.icon}</span>
+        <div className={styles.loungewear__info}>
+          <ul className={styles.loungewear__benefits}>
+            {BENEFITS.map(benefit => (
+              <li key={benefit.id} className={styles.loungewear__benefit}>
+                <div className={styles.loungewear__name}>
+                  <span>{benefit.icon}</span>
 
-                <h3>{benefit.title}</h3>
+                  <h3>{benefit.title}</h3>
+                </div>
+
+                <p className={styles.loungewear__text}>{benefit.text}</p>
+              </li>
+            ))
+            }
+          </ul>
+
+          {!indicator && (
+            <>
+              <div className={styles.loungewear__button}>
+                <Button content={`Customize Your Outfit`} src={arrow} />
               </div>
 
-              <p className={styles.loungewear__info}>{benefit.text}</p>
-            </li>
-          ))
-          }
-        </ul>
+              <div className={styles.loungewear__stars}>
+                <img
+                  src={stars}
+                  alt="stars"
+                />
+
+                <span className={styles.loungewear__online}>
+                  One of 500+ 5 Star Reviews Online
+                </span>
+              </div>
+            </>
+          )}
+        </div>
       </div>
     </section>
   )
