@@ -1,0 +1,90 @@
+.impact {
+  padding: 52px 0 56px;
+  background-color: var(--secondaryBgColor);
+
+  &__subtitle {
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__list {
+    padding: 0 73px;
+    color: var(--accentSecondaryColor);
+  }
+
+  &__li {
+    text-align: center;
+  }
+
+  &__middle-li {
+    border-block: 1px solid rgba(196, 196, 196, 0.5);
+  }
+
+  &__number {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 20px;
+  }
+
+  &__text {
+    padding: 5px 0 16px;
+    display: block;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  &__icon {
+    margin: 23px auto 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 42px;
+    height: 42px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: var(--additionalBgColor);
+  }
+
+  @media (min-width: 1024px) {
+    &__subtitle {
+      padding-bottom: 18px;
+    }
+
+    &__list {
+      display: flex;
+      justify-content: center;
+    }
+
+    &__li {
+      padding: 0 45px;
+    }
+
+    &__middle-li {
+      border-inline: 1px solid rgba(196, 196, 196, 0.5);
+      border-block: none;
+    }
+
+    &__icon {
+      margin: 0 auto 13px;
+    }
+  }
+
+  @media (min-width: 1440px) {
+  }
+}
+
+.co2 {
+  width: 30px;
+  height: 20px;
+}
+
+.water-drop {
+  width: 22px;
+  height: 31px;
+}
+
+.energy {
+  width: 19px;
+  height: 28px;
+}

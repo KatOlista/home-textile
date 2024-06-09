@@ -4,7 +4,9 @@ import {
   Comfort,
   Fans,
   Faq,
+  Footer,
   Header,
+  Impact,
   Loungewear,
 } from "./components";
 
@@ -26,7 +28,11 @@ export const App = () => {
         <Fans />
 
         <Faq />
+
+        <Impact />
       </main>
+
+      <Footer />
     </>
   )
 };
