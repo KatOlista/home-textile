@@ -1,0 +1,20 @@
+.stars {
+  &__button {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__stars {
+    padding: 11px 0 43px;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 8px;
+  }
+
+  &__online {
+    font-family: 'SuisseIntl', 'sans-serif';
+    font-size: 11px;
+    line-height: 20px;
+  }
+}
