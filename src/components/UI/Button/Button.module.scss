@@ -16,6 +16,10 @@
     background-color: var(--accentSecondaryColor);
   }
 
+  @media (max-width: 424px) {
+    width: 100%;
+  }
+
   @media (min-width: 1024px) {
     width: 90%;
   }

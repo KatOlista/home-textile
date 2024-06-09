@@ -48,4 +48,10 @@
     line-height: 20px;
     text-align: left;
   }
+
+  @media (min-width: 1024px) {
+    &__wrapper {
+      width: 250px;
+    }
+  }
 }

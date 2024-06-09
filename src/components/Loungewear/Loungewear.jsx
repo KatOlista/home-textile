@@ -122,7 +122,7 @@ export const Loungewear = () => {
 
       <div className={styles.loungewear__content}>
         <div className={styles.loungewear__imgs}>
-          {loungewears.length && (
+          {!!loungewears.length && (
             <LoungewearSlider loungewears={loungewears} />
           )}
         </div>

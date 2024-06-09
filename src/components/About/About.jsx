@@ -42,11 +42,13 @@ export const About = () => {
             <img
               src={productPicture1}
               alt="product example"
+              className={styles.about__left}
             />
 
             <img
               src={productPicture3}
               alt="product example"
+              className={styles.about__right}
             />
           </div>
 

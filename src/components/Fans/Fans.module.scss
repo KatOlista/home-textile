@@ -35,6 +35,12 @@
     padding-bottom: 67px;
 
     &__slider {
+      padding: 75px 60px 62px;
+    }
+  }
+
+  @media (min-width: 1440px) {
+    &__slider {
       padding: 75px 103px 62px;
     }
   }
