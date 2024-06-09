@@ -44,6 +44,16 @@
   border: 2px solid #fff;
 }
 
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  transform: scale(0.5);
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  width: 0px;
+}
+
 body {
   margin: 0;
   display: flex;

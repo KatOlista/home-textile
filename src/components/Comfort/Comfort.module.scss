@@ -1,0 +1,27 @@
+.comfort {
+  padding: 56px 37px 59px;
+
+  &__subtitle {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__slider {
+    margin: 23px auto 40px;
+  }
+}
+
+.cart {
+  width: 51px;
+  height: 42px;
+}
+
+.lorry {
+  width: 68px;
+  height: 49px;
+}
+
+.sunmoon {
+  width: 60px;
+  height: 60px;
+}

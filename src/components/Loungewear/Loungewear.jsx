@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 
-import { Button, Subtitle } from '../UI';
+import { Stars, Subtitle } from '../UI';
 import { client } from '../../client';
 import { LoungewearSlider, BrandSlider } from '..';
 import { indicator } from '../../utils/constants';
@@ -12,8 +12,8 @@ import 'swiper/css/thumbs';
 import 'swiper/scss';
 import styles from './Loungewear.module.scss';
 
-import arrow from '../../assets/imgs/additional/arrow.png';
-import stars from '../../assets/imgs/additional/stars.png';
+// import arrow from '../../assets/imgs/additional/arrow.png';
+// import stars from '../../assets/imgs/additional/stars.png';
 
 import SunMoonIcon from '../../assets/icons/sun-moon.svg?react';
 import CartIcon from '../../assets/icons/cart.svg?react';
@@ -138,22 +138,7 @@ export const Loungewear = () => {
           </ul>
 
           {!indicator && (
-            <>
-              <div className={styles.loungewear__button}>
-                <Button content={`Customize Your Outfit`} src={arrow} />
-              </div>
-
-              <div className={styles.loungewear__stars}>
-                <img
-                  src={stars}
-                  alt="stars"
-                />
-
-                <span className={styles.loungewear__online}>
-                  One of 500+ 5 Star Reviews Online
-                </span>
-              </div>
-            </>
+            <Stars />
           )}
         </div>
       </div>
