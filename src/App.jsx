@@ -3,6 +3,7 @@ import {
   Best,
   Comfort,
   Fans,
+  Faq,
   Header,
   Loungewear,
 } from "./components";
@@ -23,6 +24,8 @@ export const App = () => {
         <Comfort />
 
         <Fans />
+
+        <Faq />
       </main>
     </>
   )

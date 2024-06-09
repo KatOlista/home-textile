@@ -1,0 +1,50 @@
+.card {
+  border-block: 1px solid var(--thirdaryBorderColor);
+
+  &__wrapper {
+    padding: 23px 0 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__title {
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--accentPrimeColor);
+  }
+
+  &__button {
+    width: 24px;
+
+    & span {
+      display: block;
+      width: 33px;
+      height: 20px;
+
+      transition: all 0.3s ease;
+    }
+  }
+
+  &__open {
+    background: url('../../../assets/icons/+plus.svg') center center / auto auto no-repeat;
+  }
+
+  &__close {
+    background: url('../../../assets/icons/-minus.svg') center center / auto auto no-repeat;
+  }
+
+  &__text {
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    display: block;
+    font-size: 14px;
+    line-height: 20px;
+
+    transition: all 0.3s ease;
+  }
+
+  &__visible {
+    padding-bottom: 80px;
+  }
+}

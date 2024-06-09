@@ -8,3 +8,4 @@ export { Comfort } from './Comfort/Comfort';
 export { ComfortSlider } from './ComfortSlider/ComfortSlider';
 export { Fans } from './Fans/Fans';
 export { FansSlider } from './FansSlider/FansSlider';
+export { Faq } from './Faq/Faq';
