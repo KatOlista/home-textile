@@ -6,7 +6,7 @@
   </a>
 </p>
 
-The product page is built using responsive design principles, ensuring a smooth and visually pleasing experience across various devices, from desktops to mobile. It is a dynamic single-page website extracts dynamic content from Headless CMS ![Sanity](https://img.shields.io/badge/Sanity-F03E2F.svg?style=for-the-badge&logo=Sanity&logoColor=white)
+The product page was built using responsive design principles, ensuring a smooth and visually pleasing experience across various devices, from desktops to mobile. It is a dynamic single-page website that extracts dynamic content from Headless CMS ![Sanity](https://img.shields.io/badge/Sanity-F03E2F.svg?style=for-the-badge&logo=Sanity&logoColor=white)
 
 ## Getting Started
 
