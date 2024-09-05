@@ -28,7 +28,9 @@ export const About = () => {
 
   return (
     <section className={styles.about}>
-      <img src={logo} alt="byteex logo" className={styles.about__logo} />
+      <a href="./">
+        <img src={logo} alt="logo" className={styles.about__logo} />
+      </a>
 
       <h1 className={styles.about__title}>
         Don’t apologize for being comfortable.
