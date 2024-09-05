@@ -3,7 +3,7 @@ import { bigScreenBreakpoint, comments, userDeviceWidth } from '../../utils/cons
 
 import styles from './About.module.scss';
 
-import logo from '../../assets/imgs/brands/byteex-logo.png';
+import logo from '../../assets/imgs/brands/logo.svg';
 import arrow from '../../assets/imgs/additional/arrow.png';
 import author from '../../assets/imgs/additional/author.png';
 import stars from '../../assets/imgs/additional/stars.png';
