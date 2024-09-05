@@ -24,11 +24,6 @@
   padding-bottom: 20px;
 }
 
-.swiper-slide {
-  display: flex;
-  justify-content: center;
-}
-
 .swiper-pagination {
   margin: 0 auto;
   display: flex;
@@ -84,5 +79,10 @@ body {
 
   .swiper-pagination {
     display: none;
+  }
+
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
   }
 }
