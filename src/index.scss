@@ -24,6 +24,11 @@
   padding-bottom: 20px;
 }
 
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+}
+
 .swiper-pagination {
   margin: 0 auto;
   display: flex;
@@ -67,6 +72,13 @@ body {
   height: 100vh;
 }
 
+@media(max-width: 374px) {
+  .swiper-button-prev::after,
+  .swiper-button-next::after {
+    display: none;
+  }
+}
+
 @media(min-width: 1024px) {
   button {
     cursor: pointer;
@@ -79,10 +91,5 @@ body {
 
   .swiper-pagination {
     display: none;
-  }
-
-  .swiper-slide {
-    display: flex;
-    justify-content: center;
   }
 }

@@ -49,6 +49,13 @@
     text-align: left;
   }
 
+  @media (max-width: 424px) {
+    &__wrapper {
+      padding: 15px 29px;
+      width: 250px;
+    }
+  }
+
   @media (min-width: 1024px) {
     &__wrapper {
       width: 250px;
