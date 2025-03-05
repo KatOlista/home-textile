@@ -1,8 +1,8 @@
 import { Button } from '../Button/Button';
 import styles from './Stars.module.scss';
 
-import arrow from '../../../assets/imgs/additional/arrow.png';
-import stars from '../../../assets/imgs/additional/stars.png';
+import arrow from '../../../assets/imgs/additional/arrow.webp';
+import stars from '../../../assets/imgs/additional/stars.webp';
 
 export const Stars = () => {
   return (

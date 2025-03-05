@@ -3,12 +3,12 @@ import { indicator } from '../../utils/constants';
 
 import styles from './Footer.module.scss';
 
-import arrow from '../../assets/imgs/additional/arrow.png';
+import arrow from '../../assets/imgs/additional/arrow.webp';
 
-import leftPicture from '../../assets/imgs/additional/left.png';
-import centralPicture from '../../assets/imgs/additional/center.png';
-import rigthPicture from '../../assets/imgs/products/product-picture8.png';
-import paymentPicture from '../../assets/imgs/additional/payment.png';
+import leftPicture from '../../assets/imgs/additional/left.webp';
+import centralPicture from '../../assets/imgs/additional/center.webp';
+import rigthPicture from '../../assets/imgs/products/product-picture8.webp';
+import paymentPicture from '../../assets/imgs/additional/payment.webp';
 
 import GrayLorryIcon from '../../assets/icons/gray-lorry.svg?react';
 import GrayShieldIcon from '../../assets/icons/gray-shield.svg?react';

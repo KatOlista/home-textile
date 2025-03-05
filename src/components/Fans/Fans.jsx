@@ -7,8 +7,8 @@ import { FansSlider } from '..';
 
 import styles from './Fans.module.scss';
 
-import girslSmall from '../../assets/imgs/additional/girls-small.png';
-import girslBig from '../../assets/imgs/additional/girls-big.png';
+import girslSmall from '../../assets/imgs/additional/girls-small.webp';
+import girslBig from '../../assets/imgs/additional/girls-big.webp';
 
 export const Fans = () => {
   const [comments, setComments] = useState([]);

@@ -5,7 +5,7 @@ import { indicator } from '../../utils/constants';
 
 import styles from './Faq.module.scss';
 
-import questions from '../../assets/imgs/additional/questions.png';
+import questions from '../../assets/imgs/additional/questions.webp';
 
 export const Faq = () => {
   const [faqs, setFaqs] = useState([]);

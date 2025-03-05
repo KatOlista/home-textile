@@ -4,12 +4,12 @@ import { bigScreenBreakpoint, comments, userDeviceWidth } from '../../utils/cons
 import styles from './About.module.scss';
 
 import logo from '../../assets/imgs/brands/logo.svg';
-import arrow from '../../assets/imgs/additional/arrow.png';
-import author from '../../assets/imgs/additional/author.png';
-import stars from '../../assets/imgs/additional/stars.png';
-import productPicture1 from '../../assets/imgs/products/product-picture-1.png';
-import productPicture2 from '../../assets/imgs/products/product-picture-2.png';
-import productPicture3 from '../../assets/imgs/products/product-picture-3.png';
+import arrow from '../../assets/imgs/additional/arrow.webp';
+import author from '../../assets/imgs/additional/author.webp';
+import stars from '../../assets/imgs/additional/stars.webp';
+import productPicture1 from '../../assets/imgs/products/product-picture-1.webp';
+import productPicture2 from '../../assets/imgs/products/product-picture-2.webp';
+import productPicture3 from '../../assets/imgs/products/product-picture-3.webp';
 
 import SunMoonIcon from '../../assets/icons/sun-moon.svg?react';
 import CartIcon from '../../assets/icons/cart.svg?react';

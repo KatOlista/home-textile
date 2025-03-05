@@ -3,8 +3,8 @@ import { indicator } from '../../utils/constants';
 
 import styles from './Best.module.scss';
 
-import best from '../../assets/imgs/additional/best.png';
-import bestBig from '../../assets/imgs/additional/best-big.png';
+import best from '../../assets/imgs/additional/best.webp';
+import bestBig from '../../assets/imgs/additional/best-big.webp';
 
 const TEXTS = [
   {id: 1, text: 'Hi! My name’s [Insert Name], and I founded [Insert] in ____.'},
